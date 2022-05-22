@@ -1,24 +1,33 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column             | Type   | Options                                |
+| ------------------ | ------ | -------------------------------------- |
+| nickname           | string | null: false                            |
+| password           | string | null: false                            |
+| email              | string | null: false, unique: true, index: true |
+| family_name        | string | null: false                            |
+| first_name         | string | null: false                            |
+| family_name_kana   | string | null: false                            |
+| first_name_kana    | string | null: false                            |
+| birth_date         | date   | null: false                            |
 
-* Ruby version
 
-* System dependencies
+### Association
 
-* Configuration
+- 
+- 
 
-* Database creation
 
-* Database initialization
+## profiles  テーブル
 
-* How to run the test suite
+| Column       | Type       | Options                        |
+| ------------ | ---------- | ------------------------------ |
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+### Association
+
+- 
+- 
