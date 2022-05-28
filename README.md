@@ -45,13 +45,13 @@
 | Column           | Type       | Options                        |
 | ---------------- | ---------- | ------------------------------ |
 | user             | references | null: false,foreign_key: true  |ユーザーテーブルの外部キー「誰が買ったか」
-| items            | references | null: false,foreign_key: true  |商品情報テーブルの外部キー「何を買ったか」
+| item             | references | null: false,foreign_key: true  |商品情報テーブルの外部キー「何を買ったか」
 
 ### Association
 
 - belongs_to :user  #多対1
 - belongs_to :item  #1対1子
-- has_one    :addresses  #1対1親
+- has_one    :addresse  #1対1親
 
 - ## addresses  ＃発送先情報
 
@@ -63,7 +63,7 @@
 | house_address       | string     | null: false                    |番地
 | building_name       | string     |                                |建物名（任意）
 | phone_number        | string     | null: false                    |電話番号
-| recording           | references | null: false,foreign_key: true  |購入管理テーブルの外部キー「この商品は誰が出品したものなのか」
+| recording           | references | null: false,foreign_key: true  |住所から紐づく購入情報（購入品や購入者が分かる）
 
 ### Association
 
