@@ -29,9 +29,9 @@
 | introduction      | text       | null: false                    |説明
 | category_id       | integer    | null: false                    |カテゴリー（選択）Activehashで実装
 | item_condition_id | integer    | null: false                    |商品の状態（選択）Activehashで実装
-| Shipping_cost_id  | integer    | null: false                    |配送料の負担（選択）Activehashで実装
+| shipping_cost_id  | integer    | null: false                    |配送料の負担（選択）Activehashで実装
 | city_id           | integer    | null: false                    |都道府県（配送元の地域（選択）Activehashで実装
-| Delivery_day_id   | integer    | null: false                    |配送までの日数（選択）Activehashで実装
+| delivery_day_id   | integer    | null: false                    |配送までの日数（選択）Activehashで実装
 | price             | integer    | null: false                    |価格
 
 ### Association
