@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'items#index'
   #ルートパスの設定　
   #ordersの一覧ページへ遷移するように設定するため、ordersコントローラーのindexアクション
